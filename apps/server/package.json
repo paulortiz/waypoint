@@ -1,0 +1,28 @@
+{
+  "name": "@waypoint/server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Waypoint backend. Holds the TfNSW key, normalises provider data, runs alarm pushes.",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "dev:worker": "tsx watch src/worker.ts",
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "start": "node dist/main.js",
+    "start:worker": "node dist/worker.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.1",
+    "@waypoint/shared": "*",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.1.0",
+    "openworkflow": "^0.11.0",
+    "postgres": "^3.4.9"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.0"
+  }
+}

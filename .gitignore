@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+*.log
+
+# Secrets — never commit. Only the template is tracked.
+.env
+.env.*
+!.env.example
+
+.DS_Store

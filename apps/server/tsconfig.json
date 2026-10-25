@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "types": ["node"],
+    // This is an application, not a published library: no .d.ts emit. Avoids
+    // "not portable" errors from third-party internal types (e.g. OpenWorkflow).
+    "declaration": false
+  },
+  "include": ["src"]
+}
